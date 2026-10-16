@@ -153,3 +153,31 @@ Ejemplo de body para POST:
 **17. Servicios en ejecución**
 ![17](docs/17-parcel-services-server_run.jpeg)
 
+### SSL / HTTPS (compose)
+
+| # | Prueba | Resultado |
+|---|---|---|
+| 18 | Compose iniciado en `8080 (https)` | OK |
+| 19 | GET detalle por HTTPS | 200 |
+| 20 | ID inválido por HTTPS | 400 |
+| 21 | Parcela no encontrada por HTTPS | 404 |
+| 22 | Petición con HTTP plano | Rechazada |
+| 23 | Servicio base caído | 503 |
+
+**18. Compose en ejecución con HTTPS**
+![18](docs/18-ssl-compose-https-run.jpeg)
+
+**19. Detalle correcto por HTTPS (200)**
+![19](docs/19-ssl-compose-detalle-200.jpeg)
+
+**20. ID inválido por HTTPS (400)**
+![20](docs/20-ssl-compose-id-invalido-400.jpeg)
+
+**21. Parcela no encontrada por HTTPS (404)**
+![21](docs/21-ssl-compose-no-encontrado-404.jpeg)
+
+**22. HTTP plano rechazado**
+![22](docs/22-ssl-compose-http-rechazado.jpeg)
+
+**23. Servicio base caído (503)**
+![23](docs/23-ssl-compose-servicio-caido-503.jpeg)
